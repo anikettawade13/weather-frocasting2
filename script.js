@@ -197,16 +197,14 @@
 // loadWeatherOpenMeteo(28.61, 77.21, "New Delhi, IN");
 
 
-// ==== CONFIG ====
-// ==== CONFIG ====
+
 const API_KEY  = "34c77e50b8e529c7847fe8bf18163669";  // only the key, no URL
 const BASE_URL = "https://api.openweathermap.org/data/2.5";
 
-// ==== DOM ELEMENTS ====
+
 const cityInput = document.getElementById("cityInput");
 const useLocationBtn = document.getElementById("useLocationBtn");
 
-// main labels
 const locationLabel = document.getElementById("locationLabel");
 const timeLabel = document.getElementById("timeLabel");
 const tempLabel = document.getElementById("tempLabel");
@@ -225,7 +223,7 @@ const dewLabel = document.getElementById("dewLabel");
 const sunriseLabel = document.getElementById("sunriseLabel");
 const sunsetLabel = document.getElementById("sunsetLabel");
 
-// containers
+
 const hourlyContainer = document.getElementById("hourlyContainer");
 const dailyContainer = document.getElementById("dailyContainer");
 
@@ -529,6 +527,7 @@ useLocationBtn.addEventListener("click", () => {
 
 // initial load
 fetchWeatherByCity("San Francisco");
+
 
 
 
